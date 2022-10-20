@@ -1,9 +1,12 @@
 <?php
 
 
-namespace Wasp\Arquitetura;
+namespace Wasp\Arquitetura\Dominio\Aluno;
 
 // Entity
+use Wasp\Arquitetura\Cpf;
+use Wasp\Arquitetura\Email;
+
 class Aluno
 {
     private Cpf $cpf;

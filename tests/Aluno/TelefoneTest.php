@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Wasp\Arquitetura\Telefone;
+use Wasp\Arquitetura\Dominio\Aluno\Telefone;
 
 class TelefoneTest extends TestCase
 {

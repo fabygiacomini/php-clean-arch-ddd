@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Wasp\Arquitetura;
+namespace Wasp\Arquitetura\Dominio;
 
 // VO
 class Cpf implements \Stringable

@@ -1,8 +1,10 @@
 <?php
 
 
-namespace Wasp\Arquitetura;
+namespace Wasp\Arquitetura\Dominio\Indicacao;
 
+
+use Wasp\Arquitetura\Dominio\Aluno\Aluno;
 
 class Indicacao
 {

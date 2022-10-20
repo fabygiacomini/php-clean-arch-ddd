@@ -2,7 +2,7 @@
 
 
 use PHPUnit\Framework\TestCase;
-use Wasp\Arquitetura\Email;
+use Wasp\Arquitetura\Dominio\Email;
 
 class EmailTest extends TestCase
 {
