@@ -13,6 +13,7 @@ class Aluno
     private string $nome;
     private Email $email;
     private array $telefones;
+    private string $senha;
 
     // named constructor
     public static function comCpfNomeEEmail(string $cpf, string $nome, string $email): self
@@ -29,6 +30,7 @@ class Aluno
         $this->cpf = $cpf;
         $this->nome = $nome;
         $this->email = $email;
+        $this->telefones = [];
     }
 
     public function adicionarTelefone(string $ddd, string $numero): self

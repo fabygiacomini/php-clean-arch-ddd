@@ -1,5 +1,7 @@
 <?php
 
+namespace Wasp\Arquitetura\Infra\Aluno;
+
 use Wasp\Arquitetura\Dominio\Aluno\Aluno;
 use Wasp\Arquitetura\Dominio\Aluno\AlunoNaoEncontradoException;
 use Wasp\Arquitetura\Dominio\Aluno\AlunoRepositoryInterface;

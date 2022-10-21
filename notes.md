@@ -35,3 +35,13 @@ necessidade de mudança de banco de dados ou qualquer outro recurso que represen
 será mais fácil adaptar, basta apenas implementar um novo repositório, e a camada de domínio não
 será impactada.
 <br>
+
+### Services
+Quando precisamos aplicar alguma regra que não seja exatamente uma regra das entidades/VO, precisamos
+de um serviço. Ele poderá ser ums serviço de domínio, por exemplo, a interface `CifradorDeSenhaInterface`
+seria um serviço de domínio (caso houvesse alguma regra aplicada), pois é uma regra do negócio que a senha seja cifrada. Já as implementações
+dessa interface, como, por exemplo, `CifradorDeSenhaPhp` é um serviço de infraestrutura, pois
+para o domínio, apenas precisamos ter uma senha cifrada, como isso será feito, não importa para
+o domínio, é um detalhe de infraestrutura, podendo, inclusive, ter várias implementações diferentes.
+<br>
+
