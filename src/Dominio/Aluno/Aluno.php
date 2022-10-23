@@ -35,11 +35,15 @@ class Aluno
 
     public function adicionarTelefone(string $ddd, string $numero): self
     {
+        // Invariância: regra entre duas classes (Aluno-Telefone)
+        if (count($this->telefones) === 2) {
+            throw new AdicaoTelefoneAlemDoPermitidoException($this->cpf);
+        }
         $this->telefones[] = new Telefone($ddd, $numero);
         return $this;
     }
 
-    public function cpf(): string
+    public function cpf(): Cpf
     {
         return $this->cpf;
     }

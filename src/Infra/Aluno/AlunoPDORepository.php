@@ -8,7 +8,7 @@ use Wasp\Arquitetura\Dominio\Cpf;
 
 class AlunoPDORepository implements AlunoRepositoryInterface
 {
-    private PDO $conexao;
+    private \PDO $conexao;
 
     public function __construct(\PDO $conexao)
     {

@@ -1,4 +1,4 @@
-# Clean Architecture Notes
+# Study Notes
 
 ## Alguns conceitos arquiteturais
 
@@ -45,3 +45,56 @@ para o domínio, apenas precisamos ter uma senha cifrada, como isso será feito,
 o domínio, é um detalhe de infraestrutura, podendo, inclusive, ter várias implementações diferentes.
 <br>
 
+---
+
+## DDD
+
+Domain Driven Design é sobre por o domínio da aplicação sempre no centro e como prioritário,
+haja vista, que se trata de uma modelagem orientada ao domínio.<br>
+Com isso, alguns detalhes podem ser citados como, por exemplo, na nossa classe Aluno, que
+representa uma entidade, poderíamos ter um id, que seria gerado pelo banco de dados e
+identificaria esse aluno. No entanto, isso estaria feriando os conceitos do DDD, pois,
+para um especialista de negócio, um aluno não tem um id, mas sim um CPF, e pode ser 
+identificado por meio dele. Assim, o ideial é tentar blindar de toda forma o domínio de
+conceitos de infraestrutura.<br>
+Pos isso utilizamos a inversão de dependências, criando a interface d repository, por exemplo,
+na camada de domínio, interagindo apenas com ela, e deixamos a implementação na camada
+de interface.<br>
+No entanto, é sempre importante pesar as vantagens e desvantagens de cada abordagem.
+<br>
+
+### Linguagem Ubíqua
+Preferir por utilizar terminologia utilizada nas reuniões com negócio nas classes e códigos
+para facilitar o entendimento em sistemas maiores.<br>
+Os termos usados no negócio devem ser usados no código, independente da língua utilizada.
+<br>
+
+### Aggregate
+Um aggregate é uma classe/entidade que possui objetos relacionados e estes objetos relacionados
+são controlados por essa entidade.<br>
+No nosso caso, Aluno pode ser considerado o aggregate root, e o Telefone é o relacionamento.
+Pois um telefone só pode ser criado por meio de um método existente dentro da classe de Aluno;
+assim os telefones são agregados da entidade Aluno.<br>
+Alguns exemplos e literaturas consideram o aggregate como sendo uma collection da classe agregada.
+Mas isso não é muito correto, pois a classe agregadora possui mais funcionalidades, propriedades
+e regras além de ser unicamente uma coleção de telefones.
+<br>
+A raiz de agregação controla todo o acesso da classe agregada. Assim, caso precisássemos
+remover/adicionar um telefone, não o faríamos por meio de um repositório de telefone,
+mas sim por meio do repositório da aggregate root (no nosso exemplo, Aluno). A raiz de agregação
+cuida da persistência dos objetos agregados.
+<br>
+
+### Evento de Domínio
+Algo que acontece no domínio da aplicação e que alguém precisa ser notificado disso.<br>
+Um evento de domínio deve ser imutável, nunca poderá ser alterado. E precisa ser identificado.<br>
+No nosso caso, a classe AlunoMatricula é um evento que ocorre depois que o use case 
+MatricularAluno ocorre.<br>
+Resumindo, sempre que for executada a ação de MatricularAluno, será configurado que o evente terá
+um ouvinte, neste caso o ouvinte será LogDeAlunoMatriculado. Quando terminar de adicionar o aluno,
+será publicado o evento AlunoMatriculado e o log vai ser criado.
+<br>
+
+Um domínio possui eventos. Ao ocorrer certa ação, podemos publicar o evento para que ouvintes
+consigam tomar conhecimento e reagir ao evento.
+<br>
