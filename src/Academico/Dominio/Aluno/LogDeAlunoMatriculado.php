@@ -24,6 +24,6 @@ class LogDeAlunoMatriculado extends OuvinteDeEvento
 
     public function sabeProcessar(EventoInterface $evento): bool
     {
-        return $evento instanceof AlunoMatriculado;
+        return $evento->nome() === 'aluno_matriculado';
     }
 }

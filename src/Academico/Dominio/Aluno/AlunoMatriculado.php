@@ -9,6 +9,7 @@ use Wasp\Arquitetura\Shared\Dominio\Evento\EventoInterface;
 
 class AlunoMatriculado implements EventoInterface
 {
+    const NOME = 'aluno_matriculado';
     private \DateTimeImmutable $momento;
     private Cpf $cpfAluno;
 
@@ -26,5 +27,15 @@ class AlunoMatriculado implements EventoInterface
     public function momento(): \DateTimeImmutable
     {
         return $this->momento;
+    }
+
+    public function nome(): string
+    {
+        return self::NOME;
+    }
+
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
     }
 }
