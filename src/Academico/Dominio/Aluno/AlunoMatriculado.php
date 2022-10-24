@@ -4,8 +4,8 @@
 namespace Wasp\Arquitetura\Academico\Dominio\Aluno;
 
 // Evento de domínio
-use Wasp\Arquitetura\Academico\Dominio\Cpf;
-use Wasp\Arquitetura\Academico\Dominio\EventoInterface;
+use Wasp\Arquitetura\Shared\Dominio\Cpf;
+use Wasp\Arquitetura\Shared\Dominio\Evento\EventoInterface;
 
 class AlunoMatriculado implements EventoInterface
 {

@@ -5,7 +5,7 @@ namespace Wasp\Arquitetura\Academico\Dominio\Aluno;
 
 
 use Throwable;
-use Wasp\Arquitetura\Academico\Dominio\Cpf;
+use Wasp\Arquitetura\Shared\Dominio\Cpf;
 
 class AlunoNaoEncontradoException extends \DomainException
 {

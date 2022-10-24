@@ -4,7 +4,7 @@
 namespace Wasp\Arquitetura\Academico\Dominio\Aluno;
 
 // Entity
-use Wasp\Arquitetura\Academico\Dominio\Cpf;
+use Wasp\Arquitetura\Shared\Dominio\Cpf;
 use Wasp\Arquitetura\Academico\Dominio\Email;
 
 class Aluno

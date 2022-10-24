@@ -5,7 +5,7 @@ namespace Wasp\Arquitetura\Academico\Infra\Aluno;
 use Wasp\Arquitetura\Academico\Dominio\Aluno\Aluno;
 use Wasp\Arquitetura\Academico\Dominio\Aluno\AlunoNaoEncontradoException;
 use Wasp\Arquitetura\Academico\Dominio\Aluno\AlunoRepositoryInterface;
-use Wasp\Arquitetura\Academico\Dominio\Cpf;
+use Wasp\Arquitetura\Shared\Dominio\Cpf;
 
 class AlunoPDORepository implements AlunoRepositoryInterface
 {

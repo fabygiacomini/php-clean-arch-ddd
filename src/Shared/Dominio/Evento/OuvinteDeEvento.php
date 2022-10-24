@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Wasp\Arquitetura\Academico\Dominio;
+namespace Wasp\Arquitetura\Shared\Dominio\Evento;
 
 
 abstract class OuvinteDeEvento

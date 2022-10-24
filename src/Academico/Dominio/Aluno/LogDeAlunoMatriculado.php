@@ -3,9 +3,9 @@
 
 namespace Wasp\Arquitetura\Academico\Dominio\Aluno;
 
-// Listener do evento AlunoMatriculado
-use Wasp\Arquitetura\Academico\Dominio\EventoInterface;
-use Wasp\Arquitetura\Academico\Dominio\OuvinteDeEvento;
+// Listener do evento AlunoMatriculado;
+use Wasp\Arquitetura\Shared\Dominio\Evento\EventoInterface;
+use Wasp\Arquitetura\Shared\Dominio\Evento\OuvinteDeEvento;
 
 class LogDeAlunoMatriculado extends OuvinteDeEvento
 {

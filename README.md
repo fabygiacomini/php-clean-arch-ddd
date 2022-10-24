@@ -119,4 +119,11 @@ Dependendo do caso e do tamanho do projeto, a separação de contextos acaba por
 no desacoplamento de possíveis projetos, em micros-serviços com responsabilidades específicas.
 <br>
 
-### Contextos compartilhados (Shared Contexts)
+#### Contextos compartilhados (Shared Contexts)
+Não havendo a intenção de separar em projetos distintos, podemos utilizar um módulo com
+Shared Kernel, ou seja, com as classes que serão utilizadas por ambos os contextos.<br>
+Isso cria, de certa forma, uma dependência entre os contextos, mas é uma solução simples,
+permite a comunicação entre os contexos, e cabe ao nosso caso, embora tire a
+flexibilidade. Vai de caso a caso.
+<br>
+

@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Wasp\Arquitetura\Academico\Dominio\Cpf;
+use Wasp\Arquitetura\Shared\Dominio\Cpf;
 
 class CpfTest extends TestCase
 {

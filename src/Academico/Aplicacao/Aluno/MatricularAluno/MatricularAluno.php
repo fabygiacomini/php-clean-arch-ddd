@@ -5,8 +5,7 @@ namespace Wasp\Arquitetura\Academico\Aplicacao\Aluno\MatricularAluno;
 use Wasp\Arquitetura\Academico\Dominio\Aluno\Aluno;
 use Wasp\Arquitetura\Academico\Dominio\Aluno\AlunoMatriculado;
 use Wasp\Arquitetura\Academico\Dominio\Aluno\AlunoRepositoryInterface;
-use Wasp\Arquitetura\Academico\Dominio\Aluno\LogDeAlunoMatriculado;
-use Wasp\Arquitetura\Academico\Dominio\PublicadorDeEvento;
+use Wasp\Arquitetura\Shared\Dominio\Evento\PublicadorDeEvento;
 
 // UseCase ou Application Service ou Command Handler
 class MatricularAluno

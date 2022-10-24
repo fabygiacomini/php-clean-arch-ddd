@@ -2,7 +2,7 @@
 
 namespace Wasp\Arquitetura\Gamificacao\Dominio\Selo;
 
-use Wasp\Arquitetura\Academico\Dominio\Cpf;
+use Wasp\Arquitetura\Shared\Dominio\Cpf;
 
 interface SeloRepositoryInterface
 {

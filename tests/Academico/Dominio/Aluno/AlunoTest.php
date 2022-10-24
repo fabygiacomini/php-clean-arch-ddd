@@ -4,7 +4,7 @@
 use PHPUnit\Framework\TestCase;
 use Wasp\Arquitetura\Academico\Dominio\Aluno\AdicaoTelefoneAlemDoPermitidoException;
 use Wasp\Arquitetura\Academico\Dominio\Aluno\Aluno;
-use Wasp\Arquitetura\Academico\Dominio\Cpf;
+use Wasp\Arquitetura\Shared\Dominio\Cpf;
 use Wasp\Arquitetura\Academico\Dominio\Email;
 
 class AlunoTest extends TestCase

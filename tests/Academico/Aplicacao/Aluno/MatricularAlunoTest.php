@@ -5,9 +5,9 @@ use PHPUnit\Framework\TestCase;
 use Wasp\Arquitetura\Academico\Aplicacao\Aluno\MatricularAluno\MatricularAluno;
 use Wasp\Arquitetura\Academico\Aplicacao\Aluno\MatricularAluno\MatricularAlunoDto;
 use Wasp\Arquitetura\Academico\Dominio\Aluno\LogDeAlunoMatriculado;
-use Wasp\Arquitetura\Academico\Dominio\PublicadorDeEvento;
+use Wasp\Arquitetura\Shared\Dominio\Evento\PublicadorDeEvento;
 use Wasp\Arquitetura\Academico\Infra\Aluno\AlunoMemoriaRepository;
-use Wasp\Arquitetura\Academico\Dominio\Cpf;
+use Wasp\Arquitetura\Shared\Dominio\Cpf;
 
 class MatricularAlunoTest extends TestCase
 {

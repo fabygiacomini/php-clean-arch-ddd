@@ -4,7 +4,7 @@
 namespace Wasp\Arquitetura\Academico\Dominio\Aluno;
 
 
-use Wasp\Arquitetura\Academico\Dominio\Cpf;
+use Wasp\Arquitetura\Shared\Dominio\Cpf;
 
 interface AlunoRepositoryInterface
 {
