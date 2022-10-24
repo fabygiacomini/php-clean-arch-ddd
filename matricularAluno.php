@@ -1,10 +1,10 @@
 <?php
 
-use Wasp\Arquitetura\Aplicacao\Aluno\MatricularAluno\MatricularAluno;
-use Wasp\Arquitetura\Aplicacao\Aluno\MatricularAluno\MatricularAlunoDto;
-use Wasp\Arquitetura\Dominio\Aluno\LogDeAlunoMatriculado;
-use Wasp\Arquitetura\Dominio\PublicadorDeEvento;
-use Wasp\Arquitetura\Infra\Aluno\AlunoMemoriaRepository;
+use Wasp\Arquitetura\Academico\Aplicacao\Aluno\MatricularAluno\MatricularAluno;
+use Wasp\Arquitetura\Academico\Aplicacao\Aluno\MatricularAluno\MatricularAlunoDto;
+use Wasp\Arquitetura\Academico\Dominio\Aluno\LogDeAlunoMatriculado;
+use Wasp\Arquitetura\Academico\Dominio\PublicadorDeEvento;
+use Wasp\Arquitetura\Academico\Infra\Aluno\AlunoMemoriaRepository;
 
 require 'vendor/autoload.php';
 
