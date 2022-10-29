@@ -129,3 +129,19 @@ Isso cria, de certa forma, uma dependência entre os contextos, mas é uma solu�
 permite a comunicação entre os contexos, e cabe ao nosso caso, embora tire a
 flexibilidade. Vai de caso a caso.
 <br>
+
+#### Sistemas distribuídos
+Com essa "modularização"/separação que fizemos no projeto, caso haja a necessidade, ficaria mais fácil de separa-lo
+em projetos diferentes, permitindo, por exemplo, o acesso a múltiplas aplicações, através de uma API, e escalar
+cada um deles.<br>
+No nosso caso, o diretório Academico poderia ser um projeto separado do de Gamificação. Mas claro que isso só
+seria feito caso a complexidade do projeto evoluísse.
+<br>
+
+#### Camada Anticorrupção
+Quando temos sistemas distribuídos, é possível que tenhamos uma camada que entenda um pouco do contexto de outro
+sistema, ao que se dá o nome de camada anticorrupção.<br>
+Como exemplo, podemos citar o sistema de cadastro de alunos, que publica o evento em um sisema de mensageria e
+indentifica o aluno pelo CPF. O sistema que vai consumir essa mensagem pode entender esse contexto de CPF e ser
+capaz de identificar, traduzir e validar algumas regras para se certificar de que está correto.
+<br>
